@@ -1,0 +1,7 @@
+[user]
+	name = yangsl
+	email = 3242809681@qq.com
+[init]
+    defaultBranch = main
+[credential]
+    helper = cache --timeout 30000

@@ -1,0 +1,12 @@
+alias vi="vim"
+alias bk="cd ..; ls"
+alias ..="cd ../..; ls"
+
+alias ls='lsd'
+alias ll='ls -l'
+alias la='ls -lAh'
+
+alias alias_zshrc="cat ~/.zshrc | grep '^alias '"
+
+alias gtest="git clone https://github.com/ycm-core/YouCompleteMe.git"
+alias wtest="wget https://github.com/yuk7/ArchWSL/releases/download/22.10.16.0/Arch.zip"
