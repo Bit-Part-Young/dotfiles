@@ -1,3 +1,6 @@
+" basic configuration
+"################################################################################
+
 "快速跳转
 noremap J 5j
 noremap K 5k
@@ -13,6 +16,9 @@ nnoremap <Leader>x :x<CR>
 nnoremap <Leader>q :q<CR>
 
 set statusline+=%F "显示完整路径
+
+"################################################################################
+
 
 
 " plug configuation 
@@ -32,6 +38,7 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 "################################################################################
+
 
 
 " airline configuration
