@@ -1,0 +1,23 @@
+# remote config
+Host Manager
+    HostName 202.120.55.11
+    Port 312
+    User yangsl
+    IdentityFile ~/.ssh/id_rsa
+
+Host Master
+    HostName 202.120.55.11
+    Port 313
+    User yangsl
+    IdentityFile ~/.ssh/id_rsa
+
+Host Pi
+    HostName pilogin.hpc.sjtu.edu.cn
+    User mseklt
+    IdentityFile ~/.ssh/id_rsa
+
+Host SiYuan
+    HostName sylogin.hpc.sjtu.edu.cn
+    User mseklt
+    IdentityFile ~/.ssh/id_rsa
+    
