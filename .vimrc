@@ -27,8 +27,8 @@ set statusline+=%F "显示完整路径
 set rtp+=~/.vim/autoload/plug.vim
 call plug#begin()
 
-Plug 'Lattay/vasp.vim'
-Plug 'tommason14/lammps.vim'
+"Plug 'Lattay/vasp.vim'
+"Plug 'tommason14/lammps.vim'
 
 Plug 'dense-analysis/ale'
 
