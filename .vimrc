@@ -1,6 +1,8 @@
 " basic configuration
 "################################################################################
 
+set encoding=utf-8
+
 "快速跳转
 noremap J 5j
 noremap K 5k
