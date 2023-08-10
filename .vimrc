@@ -26,25 +26,25 @@ set statusline+=%F "显示完整路径
 " plug configuation 
 "################################################################################
 
-set rtp+=~/.vim/autoload/plug.vim
-call plug#begin()
+"set rtp+=~/.vim/autoload/plug.vim
+"call plug#begin()
 
 "Plug 'Lattay/vasp.vim'
 "Plug 'tommason14/lammps.vim'
 
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
-call plug#end()
+"call plug#end()
 
 "################################################################################
 
 
 
 " airline configuration
-let g:airline_theme='powerlineish'
-let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
-let g:airline#extensions#branch#enabled = 1
+"let g:airline_theme='powerlineish'
+"let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+"let g:airline#extensions#branch#enabled = 1
 
