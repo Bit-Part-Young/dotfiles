@@ -41,6 +41,7 @@ alias cdsc="cd $HOME/scripts; ls"
 alias atb="conda activate base_ysl"
 alias dea="conda deactivate"
 
+#alias vi="vim"
 #alias cdbp="cd $HOME/src/miniconda3/envs/base_ysl/lib/python3.11/site-packages/"
 #alias codei="code-insiders"
 #alias clo="rm -rf *.out *.err"
