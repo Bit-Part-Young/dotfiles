@@ -41,9 +41,20 @@ set statusline+=%F "显示完整路径
 "Plug 'tommason14/lammps.vim'
 
 "Plug 'dense-analysis/ale'
+"Plug 'tpope/vim-surround'
 
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
+
+
+
+"git url格式
+"Plug 'https://ghproxy.com/https://github.com/vim-airline/vim-airline.git'
+"Plug 'https://ghproxy.com/https://github.com/vim-airline/vim-airline-themes.git'
+"Plug 'https://ghproxy.com/https://github.com/Lattay/vasp.vim.git'
+"Plug 'https://ghproxy.com/https://github.com/tommason14/lammps.vim.git'
+"Plug 'https://ghproxy.com/https://github.com/dense-analysis/ale.git'
+"Plug 'https://ghproxy.com/https://github.com/tpope/vim-surround.git'
 
 "call plug#end()
 
