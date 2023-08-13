@@ -44,6 +44,8 @@ set statusline+=%F "显示完整路径
 
 "Plug 'tpope/vim-surround'
 
+"Plug 'preservim/nerdtree'
+
 "Plug 'preservim/nerdcommenter'
 
 "Plug 'lifepillar/vim-solarized8'
@@ -68,6 +70,8 @@ set statusline+=%F "显示完整路径
 "Plug 'https://ghproxy.com/https://github.com/dense-analysis/ale.git'
 
 "Plug 'https://ghproxy.com/https://github.com/tpope/vim-surround.git'
+
+"Plug 'https://ghproxy.com/https://github.com/preservim/nerdtree.git'
 
 "Plug 'https://ghproxy.com/https://github.com/preservim/nerdcommenter.vim.git'
 
@@ -95,39 +99,39 @@ set statusline+=%F "显示完整路径
 
 " NERDTree configuration
 " Start NERDTree and put the cursor back in the other window.
-" autocmd VimEnter * NERDTree | wincmd p
-" nnoremap <leader>n :NERDTreeFocus<CR>
-" nnoremap <C-n> :NERDTree<CR>
-" nnoremap <C-t> :NERDTreeToggle<CR>
-" nnoremap <C-f> :NERDTreeFind<CR>
+"autocmd VimEnter * NERDTree | wincmd p
+"nnoremap <leader>n :NERDTreeFocus<CR>
+"nnoremap <C-n> :NERDTree<CR>
+"nnoremap <C-t> :NERDTreeToggle<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
 
 
 " nerdcommenter configuration
-" let g:NERDSpaceDelims = 0 " 在注释符号后加一个空格
-" let g:NERDCompactSexyComs = 1 " 紧凑排布多行注释
-" let g:NERDDefaultAlign = 'left' " 逐行注释左对齐
-" let g:NERDAltDelims_java = 1 " JAVA 语言使用默认的注释符号
-" let g:NERDCustomDelimiters = {'c': {'left': '/*', 'right': '*/'}} " C 语言注释符号
-" let g:NERDCustomDelimiters = {'sh': { 'left': '# ', 'right': ''}} " shell 注释符号
-" let g:NERDCommentEmptyLines = 0 " 允许空行注释
-" let g:NERDTrimTrailingWhitespace = 1 " 取消注释时删除行尾空格
-" let g:NERDToggleCheckAllLines = 1 " 检查选中的行操作是否成功
-" let g:solarized_termtrans = 1 " 使用 termnal 背景
-" let g:solarized_visibility = "high" " 使用 :set list 显示特殊字符时的高亮级别
+"let g:NERDSpaceDelims = 0 " 在注释符号后加一个空格
+"let g:NERDCompactSexyComs = 1 " 紧凑排布多行注释
+"let g:NERDDefaultAlign = 'left' " 逐行注释左对齐
+"let g:NERDAltDelims_java = 1 " JAVA 语言使用默认的注释符号
+"let g:NERDCustomDelimiters = {'c': {'left': '/*', 'right': '*/'}} " C 语言注释符号
+"let g:NERDCustomDelimiters = {'sh': { 'left': '# ', 'right': ''}} " shell 注释符号
+"let g:NERDCommentEmptyLines = 0 " 允许空行注释
+"let g:NERDTrimTrailingWhitespace = 1 " 取消注释时删除行尾空格
+"let g:NERDToggleCheckAllLines = 1 " 检查选中的行操作是否成功
+"let g:solarized_termtrans = 1 " 使用 termnal 背景
+"let g:solarized_visibility = "high" " 使用 :set list 显示特殊字符时的高亮级别
 
 
 " solarized8 configuration
-" set background=dark
-" colorscheme solarized8
+"set background=dark
+"colorscheme solarized8
 "colorscheme solarized8_flat
 
 
 " easymotion configuration
-" map <Leader> <Plug>(easymotion-prefix)
+"map <Leader> <Plug>(easymotion-prefix)
 
 
 " ale configuration
-" let g:ale_linters={'python': ['pylint']}
+"let g:ale_linters={'python': ['pylint']}
 
 "################################################################################
 
