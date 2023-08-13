@@ -10,6 +10,14 @@ noremap K 5k
 "设置leader键为空格
 let mapleader="\<Space>"
 
+"显示行号
+nnoremap snu :set number<CR>
+"取消显示行号
+nnoremap snm :set nonumber<CR>
+"取消高亮
+nnoremap snh :noh<CR>
+
+
 "保存并退出
 nnoremap <Leader>wq :wq<CR>
 "保存并退出 但只有修改时才修改时间
