@@ -54,6 +54,13 @@ set statusline+=%F "显示完整路径
 
 "Plug 'easymotion/vim-easymotion'
 
+" unnecessary
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"Plugin 'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets'"
+
+
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
 
@@ -80,6 +87,13 @@ set statusline+=%F "显示完整路径
 "Plug 'https://ghproxy.com/https://github.com/lifepillar/vim-solarized8.git'
 
 "Plug 'https://ghproxy.com/https://github.com/easymotion/vim-easymotion.git'
+
+" unnecessary
+"Plug 'https://ghproxy.com/https://github.com/neoclide/coc.nvim.git', {'branch': 'release'}
+
+"Plug 'https://ghproxy.com/https://github.com/SirVer/ultisnips.git'
+"Plug 'https://ghproxy.com/https://github.com/honza/vim-snippets.git'
+
 
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'https://ghproxy.com/https://github.com/junegunn/fzf.vim.git'
@@ -134,6 +148,17 @@ set statusline+=%F "显示完整路径
 
 " ale configuration
 "let g:ale_linters={'python': ['pylint']}
+
+
+" ultisnips configuration
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+"let g:UltiSnipsEditSplit="vertical"
+
+
 
 "################################################################################
 
