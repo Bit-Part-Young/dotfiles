@@ -75,14 +75,14 @@ set statusline+=%F "显示完整路径
 
 "Plug 'https://ghproxy.com/https://github.com/preservim/nerdtree.git'
 
-"Plug 'https://ghproxy.com/https://github.com/preservim/nerdcommenter.vim.git'
+"Plug 'https://ghproxy.com/https://github.com/preservim/nerdcommenter.git'
 
-"Plug 'https://ghproxy.com/https://github.com/lifepillar/vim-solarized8.vim.git'
+"Plug 'https://ghproxy.com/https://github.com/lifepillar/vim-solarized8.git'
 
-"Plug 'https://ghproxy.com/https://github.com/easymotion/vim-easymotion.vim.git'
+"Plug 'https://ghproxy.com/https://github.com/easymotion/vim-easymotion.git'
 
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'https://ghproxy.com/https://github.com/junegunn/fzf.vim.vim.git'
+"Plug 'https://ghproxy.com/https://github.com/junegunn/fzf.vim.git'
 
 "call plug#end()
 
