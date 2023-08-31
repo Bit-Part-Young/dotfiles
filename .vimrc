@@ -221,7 +221,7 @@ map <leader>pp :setlocal paste!<cr>
 
 
 
-" plug configuation 
+" plug configuation
 "################################################################################
 
 "set rtp+=~/.vim/autoload/plug.vim
@@ -236,15 +236,14 @@ map <leader>pp :setlocal paste!<cr>
 "Plug 'easymotion/vim-easymotion'
 "Plug 'tpope/vim-surround'
 "Plug 'preservim/nerdcommenter'
-"Plugin 'SirVer/ultisnips'
-"Plugin 'honza/vim-snippets'"
 
 " unnecessary
 "Plug 'Lattay/vasp.vim'
 "Plug 'tommason14/lammps.vim'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'dense-analysis/ale'
-
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 
 
 " github url format
@@ -257,15 +256,16 @@ map <leader>pp :setlocal paste!<cr>
 "Plug 'https://ghproxy.com/https://github.com/easymotion/vim-easymotion.git'
 "Plug 'https://ghproxy.com/https://github.com/tpope/vim-surround.git'
 "Plug 'https://ghproxy.com/https://github.com/preservim/nerdcommenter.git'
-"Plug 'https://ghproxy.com/https://github.com/SirVer/ultisnips.git'
-"Plug 'https://ghproxy.com/https://github.com/honza/vim-snippets.git'
 
 " unnecessary
 "Plug 'https://ghproxy.com/https://github.com/Lattay/vasp.vim.git'
 "Plug 'https://ghproxy.com/https://github.com/tommason14/lammps.vim.git'
-"Plug 'https://ghproxy.com/https://github.com/neoclide/coc.nvim.git', {'branch': 'release'}
 "Plug 'https://ghproxy.com/https://github.com/dense-analysis/ale.git'
-
+" Node.js needed
+"Plug 'https://ghproxy.com/https://github.com/neoclide/coc.nvim.git', {'branch': 'release'}
+" python needed
+"Plug 'https://ghproxy.com/https://github.com/SirVer/ultisnips.git'
+"Plug 'https://ghproxy.com/https://github.com/honza/vim-snippets.git'
 
 
 "call plug#end()
@@ -311,15 +311,15 @@ map <leader>pp :setlocal paste!<cr>
 
 
 " vim-solarized8
-"colorscheme solarized
 "set background=dark
 "colorscheme solarized8
-"colorscheme solarized8_flat
 
 
 " easymotion
 "map <Leader> <Plug>(easymotion-prefix)
 
 
+" unnecessary
 " ale
 "let g:ale_linters={'python': ['pylint']}
+
