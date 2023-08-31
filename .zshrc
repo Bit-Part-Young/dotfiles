@@ -8,19 +8,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
 	git
-        extract
-        cp
-        z
-        safe-paste
-        colored-man-pages
-        web-search
-        copypath
-        python
-        autopep8
-        colorize
-        zsh-syntax-highlighting
-        zsh-autosuggestions
-        zsh-completions
+    extract
+    cp
+    z
+    safe-paste
+    colored-man-pages
+    web-search
+    copypath
+    python
+    autopep8
+    colorize
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    zsh-completions
 )
 
 source $ZSH/oh-my-zsh.sh
