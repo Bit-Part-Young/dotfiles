@@ -12,17 +12,17 @@
 
 下载 `.vimrc`
 ```bash
-sh -c 'file=$HOME/.vimrc; [ -f $file ] && mv $file $file.bak; wget https://gitee.com/yangsl306/dotfiles/blob/main/.vimrc -O $file'
+sh -c 'file=$HOME/.vimrc; [ -f $file ] && mv $file $file.bak; wget https://gitee.com/yangsl306/dotfiles/raw/main/.vimrc -O $file'
 ```
 
 下载 `.zshrc`
 ```bash
-sh -c 'file=$HOME/.zshrc; if [ -f $file ]; then mv $file $file.bak; fi; wget https://gitee.com/yangsl306/dotfiles/blob/main/.zshrc -O $file'
+sh -c 'file=$HOME/.zshrc; if [ -f $file ]; then mv $file $file.bak; fi; wget https://gitee.com/yangsl306/dotfiles/raw/main/.zshrc -O $file'
 ```
 
 下载 `proxywsl`
 ```bash
-wget https://gitee.com/yangsl306/dotfiles/blob/main/proxywsl -O $HOME/bin/proxywsl'
+wget https://gitee.com/yangsl306/dotfiles/raw/main/proxywsl -O $HOME/bin/proxywsl'
 
 chmod +x $HOME/bin/proxywsl
 ```
