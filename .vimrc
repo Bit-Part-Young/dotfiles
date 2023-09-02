@@ -97,6 +97,8 @@ map <C-l> <C-W>l
 
 
 " motion faster
+noremap j gj
+noremap k gk
 noremap J 5j
 noremap K 5k
 
