@@ -12,6 +12,8 @@
 
 下载 `.vimrc`
 ```bash
+sh -c 'file=$HOME/.vim/autoload/plug.vim; folder=$(dirname $file); [ -d $folder ] && [ -f $file ] && cp $file $file.bak || mkdir -p $folder; wget https://gitee.com/yangsl306/dotfiles/raw/main/.vim/autoload/plug.vim -O $file'
+
 sh -c 'file=$HOME/.vimrc; [ -f $file ] && mv $file $file.bak; wget https://gitee.com/yangsl306/dotfiles/raw/main/.vimrc -O $file'
 ```
 
