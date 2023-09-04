@@ -23,8 +23,18 @@ sh -c 'file=$HOME/.zshrc; if [ -f $file ]; then mv $file $file.bak; fi; wget htt
 ```
 
 下载 `proxywsl`
+
+在 `~/.bashrc` 或 `~/.zshrc` 中添加以下命令，后source
 ```bash
-wget https://gitee.com/yangsl306/dotfiles/raw/main/proxywsl -O $HOME/bin/proxywsl'
+# proxy
+export http_proxy=http://172.27.144.1:10811
+export https_proxy=http://172.27.144.1:10811
+proxywsl
+```
+
+
+```bash
+wget https://gitee.com/yangsl306/dotfiles/raw/main/proxywsl -O $HOME/bin/proxywsl
 
 chmod +x $HOME/bin/proxywsl
 ```
