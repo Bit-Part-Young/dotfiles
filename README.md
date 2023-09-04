@@ -12,14 +12,17 @@
 
 ## 下载 `.vimrc`
 
+- 复制以下命令，下载 `.vimrc` 和 插件管理器 `Plug`；
+- 进入 `.vimrc`，取消 `Plug` 的相关注释，退出重新进入，输入 `:PlugInstall` 安装插件；
+- 退出重新进入，取消相关插件配置的注释。
 ```bash
 sh -c 'file=$HOME/.vim/autoload/plug.vim; folder=$(dirname $file); [ -d $folder ] && [ -f $file ] && cp $file $file.bak || mkdir -p $folder; wget https://gitee.com/yangsl306/dotfiles/raw/main/.vim/autoload/plug.vim -O $file'
 
 sh -c 'file=$HOME/.vimrc; [ -f $file ] && mv $file $file.bak; wget https://gitee.com/yangsl306/dotfiles/raw/main/.vimrc -O $file'
 ```
 
----
 
+---
 
 ## 下载 `.zshrc`
 
@@ -27,12 +30,12 @@ sh -c 'file=$HOME/.vimrc; [ -f $file ] && mv $file $file.bak; wget https://gitee
 sh -c 'file=$HOME/.zshrc; if [ -f $file ]; then mv $file $file.bak; fi; wget https://gitee.com/yangsl306/dotfiles/raw/main/.zshrc -O $file'
 ```
 
+
 ---
 
 ## 下载 `proxywsl`
 
-在 `~/.bashrc` 或 `~/.zshrc` 中添加以下命令，
-将 `10801` 改成你所使用的代理软件的局域网端口号（需开启**允许来自局域网的连接**）。
+- 在 `~/.bashrc` 或 `~/.zshrc` 中添加以下命令，将 `10801` 改成你所使用的代理软件的局域网端口号（需开启**允许来自局域网的连接**）。
 
 ```bash
 # proxy
@@ -41,10 +44,10 @@ export https_proxy=http://172.27.144.1:10811
 proxywsl
 ```
 
-下载 `proxywsl`，后 source。
+- 复制以下命令，下载 `proxywsl`，`source ~/.bashrc` 或 `source ~/.zshrc`。
+
 ```bash
 wget https://gitee.com/yangsl306/dotfiles/raw/main/proxywsl -O $HOME/bin/proxywsl
 
 chmod +x $HOME/bin/proxywsl
 ```
-
