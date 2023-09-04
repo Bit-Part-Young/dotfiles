@@ -1,18 +1,22 @@
 #!/bin/bash
 
-proxy_rc_file=$(grep 'export http_proxy=' ~/.zshrc | awk -F'[/:]' '{print $4}')
+shellrc=~/.zshrc
+if [[ $(echo $SHELL) =~ bash ]]; then
+    shellrc=~/.bashrc
+fi
+echo ${shellrc}
+
+# current proxy IP
+proxy_rc_file=$(grep 'export http_proxy=' ${shellrc} | awk -F'[/:]' '{print $4}')
+# WSL2 proxy IP
 proxy_wsl=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
 
 if [[ ${proxy_wsl} != ${proxy_rc_file} ]];then
-
-    sed -i "s/${proxy_rc_file}/${proxy_wsl}/g" ~/.zshrc
-    echo "the proxy ip in ~/.zshrc file is: ${proxy_rc_file}"
-    echo "the proxy ip in wsl2 is: ${proxy_wsl}"
-    echo "wsl proxy is updated!"
-
+    sed -i "s/${proxy_rc_file}/${proxy_wsl}/g" ${shellrc}
+    echo "the proxy IP in ~/$(basename ${shellrc}) is: ${proxy_rc_file}."
+    echo "the proxy IP in WSL2 is: ${proxy_wsl}"
+    echo "wsl proxy IP is updated!"
 else
-
-    echo "the proxy ip in ~/.zshrc file and wsl2 are same, is: ${proxy_rc_file}."
+    echo "the proxy IP in ~/$(basename ${shellrc}) and WSL2 are same, is: ${proxy_rc_file}."
     echo "It's no need to update!"
-
 fi
