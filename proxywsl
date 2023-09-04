@@ -4,7 +4,6 @@ shellrc=~/.zshrc
 if [[ $(echo $SHELL) =~ bash ]]; then
     shellrc=~/.bashrc
 fi
-echo ${shellrc}
 
 # current proxy IP
 proxy_rc_file=$(grep 'export http_proxy=' ${shellrc} | awk -F'[/:]' '{print $4}')
