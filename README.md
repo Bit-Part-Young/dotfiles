@@ -35,7 +35,7 @@ sh -c 'file=$HOME/.zshrc; if [ -f $file ]; then mv $file $file.bak; fi; wget htt
 
 ## 下载 `proxywsl`
 
-- 在 `~/.bashrc` 或 `~/.zshrc` 中添加以下命令，将 `10801` 改成你所使用的代理软件的局域网端口号（需开启**允许来自局域网的连接**）。
+- 在 `~/.bashrc` 或 `~/.zshrc` 中添加以下命令设置代理，将 `10801` 改成你所使用的代理软件的局域网端口号（需开启**允许来自局域网的连接**）。
 
 ```bash
 # proxy
