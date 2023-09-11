@@ -1,5 +1,8 @@
 # dotfiles
 
+My own config files in Linux.
+
+
 - `.zshrc` - zsh 配置文件，主要是 oh-my-zsh 的配置，以及一些 alias、PATH
 - `.vimrc` - vim 配置文件
 - `.gitconfig` - git 配置文件
@@ -10,9 +13,11 @@
 - `proxywsl` - 登录WSL2时更新代理IP
 
 
+---
+
 ## 下载 `.vimrc`
 
-- 复制以下命令，下载 `.vimrc` 和 插件管理器 `Plug`；
+- 复制以下命令，下载插件管理器 `Plug` 和 `.vimrc`；
 - 进入 `.vimrc`，取消 `Plug` 的相关注释，退出重新进入，输入 `:PlugInstall` 安装插件；
 - 退出重新进入，取消相关插件配置的注释。
 ```bash
@@ -51,3 +56,4 @@ wget https://gitee.com/yangsl306/dotfiles/raw/main/proxywsl -O $HOME/bin/proxyws
 
 chmod +x $HOME/bin/proxywsl
 ```
+
