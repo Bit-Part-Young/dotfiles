@@ -4,10 +4,6 @@
 " basic configuration
 "################################################################################
 
-set t_Co=256
-
-set encoding=utf-8
-
 " leader key
 let mapleader="\<Space>"
 
