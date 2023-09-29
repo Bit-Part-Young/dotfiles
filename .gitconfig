@@ -7,4 +7,8 @@
     helper = cache --timeout 30000
 [pull]
     rebase = false
+[core]
+    quotepath = false
+[help]
+    autocorrect = 1
 
