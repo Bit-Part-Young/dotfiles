@@ -1,0 +1,83 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "remote.SSH.remotePlatform": {
+        "Pi-ysl": "linux",
+        "SiYuan-ysl": "linux",
+        "SiYuan": "linux",
+        "Manager-ysl": "linux",
+        "Master-ysl": "linux",
+        "Pi": "linux",
+        "Manager": "linux",
+        "Master": "linux"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Solarized Dark",
+    "git.ignoreLegacyWarning": true,
+    "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+        }
+    },
+    "isort.args":["--profile", "black"],
+    "settingsSync.ignoredExtensions": [
+        "ms-vscode-remote.vscode-remote-extensionpack"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "workbench.editorAssociations": {
+        "*.pdf": "pdf.preview"
+    },
+    "markdown-preview-enhanced.previewTheme": "atom-light.css",
+    "diffEditor.renderSideBySide": false,
+    "vim.leader": "<space>",
+    "vim.surround": true,
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-c>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+        {
+            "before": ["K"],
+            "after": ["5", "k"]
+        },
+        {
+            "before": ["J"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        }
+    ],
+    "editor.wordWrap": "on"
+}
