@@ -2,7 +2,6 @@
 
 My own config files in Linux.
 
-
 - `.zshrc` - zsh 配置文件，主要是 oh-my-zsh 的配置，以及一些 alias、PATH
 - `.vimrc` - vim 配置文件
 - `.gitconfig` - git 配置文件
@@ -10,8 +9,8 @@ My own config files in Linux.
 - `.alias` - alias 文件，非必要
 - `.condarc` - conda 配置文件，清华源
 - `source-list/` - 包含 ubuntu 和 archlinux 的换源文件
-- `proxywsl` - 登录WSL2时更新代理IP
-
+- `proxywsl` - 登录 WSL2 时自动更新代理 IP
+- `settings.json` - vscode 的用户配置文件
 
 ---
 
@@ -20,12 +19,12 @@ My own config files in Linux.
 - 复制以下命令，下载插件管理器 `Plug` 和 `.vimrc`；
 - 进入 `.vimrc`，取消 `Plug` 的相关注释，退出重新进入，输入 `:PlugInstall` 安装插件；
 - 退出重新进入，取消相关插件配置的注释。
+
 ```bash
 sh -c 'file=$HOME/.vim/autoload/plug.vim; folder=$(dirname $file); [ -d $folder ] && [ -f $file ] && cp $file $file.bak || mkdir -p $folder; wget https://gitee.com/yangsl306/dotfiles/raw/main/.vim/autoload/plug.vim -O $file'
 
 sh -c 'file=$HOME/.vimrc; [ -f $file ] && mv $file $file.bak; wget https://gitee.com/yangsl306/dotfiles/raw/main/.vimrc -O $file'
 ```
-
 
 ---
 
@@ -34,7 +33,6 @@ sh -c 'file=$HOME/.vimrc; [ -f $file ] && mv $file $file.bak; wget https://gitee
 ```bash
 sh -c 'file=$HOME/.zshrc; if [ -f $file ]; then mv $file $file.bak; fi; wget https://gitee.com/yangsl306/dotfiles/raw/main/.zshrc -O $file'
 ```
-
 
 ---
 
@@ -56,4 +54,3 @@ wget https://gitee.com/yangsl306/dotfiles/raw/main/proxywsl -O $HOME/bin/proxyws
 
 chmod +x $HOME/bin/proxywsl
 ```
-
