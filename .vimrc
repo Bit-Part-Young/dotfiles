@@ -85,6 +85,10 @@ set si "Smart indent
 set wrap "Wrap lines
 
 
+" Change insert mode to Normal mode
+imap jj <Esc>
+
+
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
