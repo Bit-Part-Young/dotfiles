@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 # alias
 ######################################################################
 
-if which lsd >/dev/null 2>&1; then
+if [ -x "$(command -v git)" ]; then
   alias ls='lsd'
 fi
 
