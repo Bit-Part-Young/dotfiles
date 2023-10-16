@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 # alias
 ######################################################################
 
-if [ -x "$(command -v git)" ]; then
+if [ -x "$(command -v lsd)" ]; then
   alias ls='lsd'
 fi
 
