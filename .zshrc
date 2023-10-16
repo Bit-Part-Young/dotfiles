@@ -61,8 +61,12 @@ alias dea="conda deactivate"
 export PATH=$HOME/bin:$PATH
 
 # proxy
+# v2ray
 #export http_proxy=http://172.0.0.1:10811
 #export https_proxy=http://172.0.0.1:10811
+# Clash
+#export http_proxy=http://172.0.0.1:7890
+#export https_proxy=http://172.0.0.1:7890
 #proxywsl
 
 
