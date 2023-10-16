@@ -47,6 +47,8 @@ export https_proxy=http://172.27.144.1:10811
 proxywsl
 ```
 
+>`10811` 通常为 v2ray 的 端口号，`7890`  通常为 Clash 的 端口号
+
 - 复制以下命令，下载 `proxywsl`，`source ~/.bashrc` 或 `source ~/.zshrc`。
 
 ```bash
