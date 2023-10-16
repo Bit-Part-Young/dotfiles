@@ -31,7 +31,13 @@ source $ZSH/oh-my-zsh.sh
 ######################################################################
 
 
+# with default zsh shell
 #alias ls='lsd'
+# zsh to get zsh shell
+#if [ -x "$(command -v lsd)" ]; then
+#  alias ls='lsd'
+#fi
+
 alias bk="cd ..; ls"
 alias ..="cd ../..; ls"
 alias cdsc="cd $HOME/scripts; ls"
