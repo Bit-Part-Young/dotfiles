@@ -38,6 +38,8 @@ source $ZSH/oh-my-zsh.sh
 #  alias ls='lsd'
 #fi
 
+alias dc="cd"
+alias LS="ls"
 alias bk="cd ..; ls"
 alias ..="cd ../..; ls"
 alias cdsc="cd $HOME/scripts; ls"
