@@ -5,18 +5,16 @@
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.sendKeybindingsToShell": true,
     "remote.SSH.remotePlatform": {
-        "Pi-ysl": "linux",
-        "SiYuan-ysl": "linux",
+        "Master": "linux",
         "SiYuan": "linux",
-        "Manager-ysl": "linux",
-        "Master-ysl": "linux",
         "Pi": "linux",
-        "Manager": "linux",
-        "Master": "linux"
+        "Manager": "linux"
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Solarized Dark",
     "git.ignoreLegacyWarning": true,
+    
+    // python formatter configuration
     "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
@@ -25,6 +23,7 @@
         }
     },
     "isort.args":["--profile", "black"],
+
     "settingsSync.ignoredExtensions": [
         "ms-vscode-remote.vscode-remote-extensionpack"
     ],
@@ -39,6 +38,8 @@
     },
     "markdown-preview-enhanced.previewTheme": "atom-light.css",
     "diffEditor.renderSideBySide": false,
+
+    // vim configuration
     "vim.leader": "<space>",
     "vim.surround": true,
     "vim.easymotion": true,
