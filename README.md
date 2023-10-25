@@ -6,9 +6,11 @@ My own config files in Linux.
 - `.vimrc` - vim 配置文件
 - `.gitconfig` - git 配置文件
 - `.ssh/config` - gitee、github 和 gitlab 的 config 文件
+- `config` - 远程服务器的 config 文件
+- `gitignore` - 部分编程语言的 gitignore 示例文件
 - `.alias` - alias 文件，非必要
 - `.condarc` - conda 配置文件，清华源
-- `source-list/` - 包含 ubuntu 和 archlinux 的换源文件
+- `source-list/` - 包含 Ubuntu 和 Archlinux 的换源文件
 - `proxywsl` - 登录 WSL2 时自动更新代理 IP
 - `settings.json` - vscode 的用户配置文件
 
