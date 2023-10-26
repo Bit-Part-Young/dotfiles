@@ -9,6 +9,7 @@
     rebase = false
 [core]
     quotepath = false
+    fileMode = false
 [help]
     autocorrect = 1
 
