@@ -4,6 +4,7 @@ My own config files in Linux.
 
 - `.zshrc` - zsh 配置文件，主要是 oh-my-zsh 的配置，以及一些 alias、PATH
 - `.vimrc` - vim 配置文件
+- `.inputrc` - tab 补全忽略大小写设置
 - `.gitconfig` - git 配置文件
 - `.ssh/config` - gitee、github 和 gitlab 的 config 文件
 - `config` - 远程服务器的 config 文件
