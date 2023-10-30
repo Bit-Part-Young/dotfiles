@@ -120,19 +120,25 @@ fi
 # alias
 ######################################################################
 
-if which lsd >/dev/null 2>&1; then
-  alias ls='lsd'
-fi
 
+# with default zsh shell
+#alias ls='lsd'
+# zsh to get zsh shell
+#if [ -x "$(command -v lsd)" ]; then
+#  alias ls='lsd'
+#fi
+
+
+alias LS="ls"
+alias dc="cd"
 alias bk="cd ..; ls"
 alias ..="cd ../..; ls"
 alias cdsc="cd $HOME/scripts; ls"
 
-alias atb="conda activate base_ysl"
+alias atb="conda activate base"
 alias dea="conda deactivate"
 
 #alias vi="vim"
-#alias cdbp="cd $HOME/src/miniconda3/envs/base_ysl/lib/python3.11/site-packages/"
 #alias codei="code-insiders"
 #alias clo="rm -rf *.out *.err"
 #alias obsd="cd /mnt/e/obsidian-md; ls"
@@ -146,11 +152,14 @@ alias dea="conda deactivate"
 
 export PATH=$HOME/bin:$PATH
 
-# proxy
+# WSL proxy config
+# v2ray
 #export http_proxy=http://172.0.0.1:10811
 #export https_proxy=http://172.0.0.1:10811
+# Clash
+#export http_proxy=http://172.0.0.1:7890
+#export https_proxy=http://172.0.0.1:7890
 #proxywsl
 
 
 ######################################################################
-
