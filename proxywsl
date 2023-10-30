@@ -10,7 +10,7 @@ proxy_rc_file=$(grep 'export http_proxy=' ${shellrc} | awk -F'[/:]' '{print $4}'
 # WSL2 proxy IP
 proxy_wsl=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
 
-if [[ ${proxy_wsl} != ${proxy_rc_file} ]];then
+if [[ ${proxy_wsl} != ${proxy_rc_file} ]]; then
     sed -i "s/${proxy_rc_file}/${proxy_wsl}/g" ${shellrc}
     echo "the proxy IP in ~/$(basename ${shellrc}) is: ${proxy_rc_file}."
     echo "the proxy IP in WSL2 is: ${proxy_wsl}"
