@@ -21,24 +21,24 @@ source $ZSH/oh-my-zsh.sh
 
 
 # with default zsh shell
-#alias ls='lsd'
+#alias ls="lsd"
 # zsh to get zsh shell
 #if [ -x "$(command -v lsd)" ]; then
-#  alias ls='lsd'
+#  alias ls="lsd"
 #fi
 
 
 alias LS="ls"
-alias dc="cd"
 alias bk="cd ..; ls"
 alias ..="cd ../..; ls"
 alias cdsc="cd $HOME/scripts; ls"
+
+alias codei="code-insiders"
 
 alias atb="conda activate base"
 alias dea="conda deactivate"
 
 #alias vi="vim"
-#alias codei="code-insiders"
 #alias clo="rm -rf *.out *.err"
 #alias obsd="cd /mnt/e/obsidian-md; ls"
 
