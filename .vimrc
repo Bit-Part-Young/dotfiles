@@ -247,29 +247,6 @@ map <leader>pp :setlocal paste!<cr>
 "Plug 'SirVer/ultisnips'
 "Plug 'honza/vim-snippets'
 
-
-" github url format
-"Plug 'https://ghproxy.com/https://github.com/lifepillar/vim-solarized8.git'
-"Plug 'https://ghproxy.com/https://github.com/vim-airline/vim-airline.git'
-"Plug 'https://ghproxy.com/https://github.com/vim-airline/vim-airline-themes.git'
-"Plug 'https://ghproxy.com/https://github.com/preservim/nerdtree.git'
-"Plug 'https://ghproxy.com/https://github.com/junegunn/fzf.git', { 'do': { -> fzf#install() } }
-"Plug 'https://ghproxy.com/https://github.com/junegunn/fzf.vim.git'
-"Plug 'https://ghproxy.com/https://github.com/easymotion/vim-easymotion.git'
-"Plug 'https://ghproxy.com/https://github.com/tpope/vim-surround.git'
-"Plug 'https://ghproxy.com/https://github.com/preservim/nerdcommenter.git'
-
-" unnecessary
-"Plug 'https://ghproxy.com/https://github.com/Lattay/vasp.vim.git'
-"Plug 'https://ghproxy.com/https://github.com/tommason14/lammps.vim.git'
-"Plug 'https://ghproxy.com/https://github.com/dense-analysis/ale.git'
-" Node.js needed
-"Plug 'https://ghproxy.com/https://github.com/neoclide/coc.nvim.git', {'branch': 'release'}
-" python needed
-"Plug 'https://ghproxy.com/https://github.com/SirVer/ultisnips.git'
-"Plug 'https://ghproxy.com/https://github.com/honza/vim-snippets.git'
-
-
 "call plug#end()
 
 "################################################################################
