@@ -59,3 +59,5 @@ wget https://gitee.com/yangsl306/dotfiles/raw/main/proxywsl -O $HOME/bin/proxyws
 
 chmod +x $HOME/bin/proxywsl
 ```
+
+/etc/systemd/system/clash.service
