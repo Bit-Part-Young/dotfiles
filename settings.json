@@ -1,25 +1,31 @@
 {
-    "editor.inlineSuggest.enabled": true,
-    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
-    "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.editorAssociations": {
+        "*.pdf": "pdf.preview"
+    },
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
     "terminal.integrated.sendKeybindingsToShell": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.wordWrap": "on",
+
     "remote.SSH.remotePlatform": {
         "Master": "linux",
         "SiYuan": "linux",
         "Pi": "linux",
         "Manager": "linux"
     },
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Solarized Dark",
+
     "git.ignoreLegacyWarning": true,
     
     // python formatter configuration
     "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
         }
     },
     "isort.args":["--profile", "black"],
@@ -33,300 +39,6 @@
         "markdown": true,
         "scminput": false
     },
-    "workbench.editorAssociations": {
-        "*.pdf": "pdf.preview"
-    },
     "markdown-preview-enhanced.previewTheme": "atom-light.css",
-    "diffEditor.renderSideBySide": false,
-
-    // vim configuration
-    "vim.leader": "<space>",
-    "vim.surround": true,
-    "vim.easymotion": true,
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false,
-        "<C-c>": false
-    },
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["j"],
-            "after": ["g", "j"]
-        },
-        {
-            "before": ["k"],
-            "after": ["g", "k"]
-        },
-        {
-            "before": ["K"],
-            "after": ["5", "k"]
-        },
-        {
-            "before": ["J"],
-            "after": ["5", "j"]
-        },
-        {
-            "before": ["L"],
-            "after": ["$"]
-        },
-        {
-            "before": ["H"],
-            "after": ["^"]
-        }
-    ],
-
-    /*
-    // picgo configuration
-    "picgo.customUploadName": "${fileName}-${date}${extName}",
-    "picgo.picBed.current": "github",
-    "picgo.picBed.uploader": "github",
-    "picgo.picBed.github.branch": "master",
-    "picgo.picBed.github.path": "",
-    "picgo.picBed.github.customUrl": "",
-    "picgo.picBed.github.token": "",
-    "picgo.picBed.github.repo": "Bit-Part-Young/BTY-imgs",
-    */
-
-    "editor.wordWrap": "on"
-
-    /*
-    // latex workshop configuration
-    "latex-workshop.latex.autoBuild.run": "onFileChange",
-    "latex-workshop.showContextMenu": true,
-    "latex-workshop.intellisense.package.enabled": true,
-    "latex-workshop.message.error.show": true,
-    "latex-workshop.message.warning.show": true,
-    "latex-workshop.latex.tools": [
-        {
-            "name": "xelatex",
-            "command": "xelatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "xelatex-with-shell-escape",
-            "command": "xelatex",
-            "args": [
-                "--shell-escape",
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "xelatex-latexmk",
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-xelatex",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "xelatex-latexmk-with-shell-escape",
-            "command": "latexmk",
-            "args": [
-                "--shell-escape",
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-xelatex",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "pdflatex",
-            "command": "pdflatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "pdflatex-with-shell-escape",
-            "command": "pdflatex",
-            "args": [
-                "--shell-escape",
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "pdflatex-latexmk",
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "pdflatex-latexmk-with-shell-escape",
-            "command": "latexmk",
-            "args": [
-                "--shell-escape",
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-pdf",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
-            ]
-        },
-    ],
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "XeLaTeX Auto",
-            "tools": [
-                "xelatex-latexmk"
-            ]
-        },
-        {
-            "name": "XeLaTeX Auto with Shell Escape",
-            "tools": [
-                "xelatex-latexmk-with-shell-escape"
-            ]
-        },
-        {
-            "name": "PDFLaTeX",
-            "tools": [
-                "pdflatex"
-            ]
-        },
-        {
-            "name": "PDFLaTeX with Shell Escape",
-            "tools": [
-                "pdflatex-with-shell-escape"
-            ]
-        },
-        {
-            "name": "PDFLaTeX Auto",
-            "tools": [
-                "pdflatex-latexmk"
-            ]
-        },
-        {
-            "name": "PDFLaTeX Auto with Shell Escape",
-            "tools": [
-                "pdflatex-latexmk-with-shell-escape"
-            ]
-        },
-        {
-            "name": "XeLaTeX",
-            "tools": [
-                "xelatex"
-            ]
-        },
-        {
-            "name": "XeLaTeX with Shell Escape",
-            "tools": [
-                "xelatex-with-shell-escape"
-            ]
-        },
-
-        {
-            "name": "PDFLaTeX -> BibTeX -> PDFLaTeX*2",
-            "tools": [
-                "pdflatex",
-                "bibtex",
-                "pdflatex",
-                "pdflatex"
-            ]
-        },
-        {
-            "name": "XeLaTeX -> BibTeX -> XeLaTeX*2",
-            "tools": [
-                "xelatex",
-                "bibtex",
-                "xelatex",
-                "xelatex"
-            ]
-        },
-        {
-            "name": "latexmk",
-            "tools": [
-                "latexmk"
-            ]
-        },
-        {
-            "name": "BibTeX",
-            "tools": [
-                "bibtex"
-            ]
-        },
-    ],
-    "latex-workshop.latex.clean.fileTypes": [
-        "*.aux",
-        "*.bbl",
-        "*.blg",
-        "*.idx",
-        "*.ind",
-        "*.lof",
-        "*.lot",
-        "*.out",
-        "*.toc",
-        "*.acn",
-        "*.acr",
-        "*.alg",
-        "*.glg",
-        "*.glo",
-        "*.gls",
-        "*.ist",
-        "*.fls",
-        "*.log",
-        "*.fdb_latexmk"
-    ],
-    "latex-workshop.latex.autoClean.run": "onBuilt",
-    "latex-workshop.latex.recipe.default": "first",
-    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-    "editor.unicodeHighlight.allowedLocales": {
-        "zh-hans": true,
-        "zh-hant": true
-    },
-    "[latex]": {
-    
-        "editor.defaultFormatter": "James-Yu.latex-workshop"
-    },
-    "latex-workshop.texcount.autorun": "onSave"
-    */
+    "diffEditor.renderSideBySide": false
 }

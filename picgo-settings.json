@@ -1,0 +1,10 @@
+{
+    "picgo.customUploadName": "${fileName}-${date}${extName}",
+    "picgo.picBed.current": "github",
+    "picgo.picBed.uploader": "github",
+    "picgo.picBed.github.branch": "master",
+    "picgo.picBed.github.path": "",
+    "picgo.picBed.github.customUrl": "",
+    "picgo.picBed.github.token": "",
+    "picgo.picBed.github.repo": "Bit-Part-Young/BTY-imgs"
+}
