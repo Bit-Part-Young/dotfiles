@@ -21,8 +21,8 @@ source $ZSH/oh-my-zsh.sh
 alias LS="ls"
 alias bk="cd ..; ls"
 alias ..="cd ../..; ls"
-alias cdsc="cd ~/scripts; ls"
-alias cdsr="cd ~/src; ls"
+alias cdsc="cd $HOME/scripts; ls"
+alias cdsr="cd $HOME/src; ls"
 #alias obsd="cd ~/scripts/obsidian-md; ls"
 
 alias atb="conda activate base"
@@ -38,6 +38,6 @@ alias codei="code-insiders"
 # PATH
 ######################################################################
 
-export PATH=~/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 ######################################################################
