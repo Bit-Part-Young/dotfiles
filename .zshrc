@@ -17,6 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # alias
 ######################################################################
 
+alias mv="mv -v"
 #alias ls="lsd"
 alias LS="ls"
 alias bk="cd ..; ls"
