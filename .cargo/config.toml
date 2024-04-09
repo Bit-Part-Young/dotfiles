@@ -1,0 +1,10 @@
+[source.crates-io]
+replace-with = 'mirror'
+
+[source.mirror]
+# 清华源
+registry = "sparse+https://mirrors.tuna.tsinghua.edu.cn/crates.io-index/"
+# 科大源
+# registry = "sparse+https://mirrors.ustc.edu.cn/crates.io-index/"
+# git 写法
+# registry = "sparse+git://mirrors.ustc.edu.cn/crates.io-index/"
