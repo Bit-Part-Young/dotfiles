@@ -9,6 +9,9 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
     zsh-completions
+    you-should-use
+    zsh-vi-mode
+    fast-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
