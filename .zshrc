@@ -22,6 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias mv="mv -v"
 alias cp="cp -v"
+alias ln="ln -v"
 #alias ls="lsd"
 alias LS="ls"
 alias bk="cd ..; ls"
