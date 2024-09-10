@@ -199,6 +199,7 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => buffer related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set hidden
 " Quickly open a markdown buffer for scribble
 map <leader>x :e ~/buffer.md<cr>
 " buffer motion
@@ -223,21 +224,25 @@ map <leader>pp :setlocal paste!<cr>
 
 
 
-" plug configuation
-"################################################################################
-
+"---------------Plug configuation---------------
 "set rtp+=~/.vim/autoload/plug.vim
 "call plug#begin()
 
-"Plug 'lifepillar/vim-solarized8'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
+"Plug 'ryanoasis/vim-devicons'
+
+"Plug 'lifepillar/vim-solarized8'
+
 "Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdcommenter'
+
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
+
 "Plug 'easymotion/vim-easymotion'
+
 "Plug 'tpope/vim-surround'
-"Plug 'preservim/nerdcommenter'
 
 " unnecessary
 "Plug 'Lattay/vasp.vim'
@@ -248,21 +253,16 @@ map <leader>pp :setlocal paste!<cr>
 "Plug 'honza/vim-snippets'
 
 "call plug#end()
-
-"################################################################################
-
+"------------------------------------------------------------
 
 
-" specific vim plugins configurations
-"################################################################################
-
-" airline configuration
+"---------------vim-airline/vim-airline---------------
 "let g:airline_theme='powerlineish'
 "let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 "let g:airline#extensions#branch#enabled = 1
 
 
-" NERDTree
+"---------------preservim/nerdtree---------------
 " Start NERDTree and put the cursor back in the other window.
 "autocmd VimEnter * NERDTree | wincmd p
 "nnoremap <leader>n :NERDTreeFocus<CR>
@@ -271,7 +271,7 @@ map <leader>pp :setlocal paste!<cr>
 "nnoremap <C-f> :NERDTreeFind<CR>
 
 
-" nerdcommenter
+"----------preservim/nerdcommenter----------
 "let g:NERDSpaceDelims = 0 " 在注释符号后加一个空格
 "let g:NERDCompactSexyComs = 1 " 紧凑排布多行注释
 
@@ -289,16 +289,15 @@ map <leader>pp :setlocal paste!<cr>
 "let g:solarized_visibility = "high" " 使用 :set list 显示特殊字符时的高亮级别
 
 
-" vim-solarized8
+"----------lifepillar/vim-solarized8----------
 "set background=dark
 "colorscheme solarized8
 
 
-" easymotion
+"----------easymotion/vim-easymotion----------
 "map <Leader> <Plug>(easymotion-prefix)
 
 
 " unnecessary
-" ale
+"----------dense-analysis/ale----------
 "let g:ale_linters={'python': ['pylint']}
-
