@@ -37,7 +37,7 @@ alias ...="cd ../..; ls"
 # alias ls="lsd"
 # alias vi="nvim"
 # alias codei="code-insiders"
-# alias fzf="fzf --preview 'bat --color=always --style=numbers --line-rang
+# alias fzf='fzf --preview "bat --color=always --style=numbers --line-rang"'
 
 # alias cdsc="cd $HOME/scripts; ls"
 # alias cdsr="cd $HOME/src; ls"
