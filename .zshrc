@@ -7,7 +7,9 @@ plugins=(
     git
     extract
     z
+    colored-man-page
     # fzf-tab
+    forgit
     zsh-syntax-highlighting
     zsh-autosuggestions
     zsh-completions
@@ -35,6 +37,8 @@ alias ...="cd ../..; ls"
 
 ##########   可选   ##########
 # alias ls="lsd"
+# alias ll="ls -lh -g --header"
+# alias la="ls -lAh -g --header"
 # alias vi="nvim"
 # alias codei="code-insiders"
 # alias fzf="fzf --preview 'bat --color=always --style=numbers --line-rang
