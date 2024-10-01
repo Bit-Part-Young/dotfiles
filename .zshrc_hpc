@@ -59,10 +59,10 @@ alias setlocalproxy='
 
 
 #############    PATH    #############
-export HOME_ysl=$HOME/yangsl
+export HOME_ysl=${HOME}/yangsl
 
-export PATH=$HOME_ysl/bin:$PATH
-export PATH=$HOME_ysl/local/bin:$PATH
+export PATH=${HOME_ysl}/bin:$PATH
+export PATH=${HOME_ysl}/local/bin:$PATH
 
-export RUSTUP_HOME=$HOME_ysl/.rustup
-export CARGO_HOME=$HOME_ysl/.cargo
+export RUSTUP_HOME=${HOME_ysl}/.rustup
+export CARGO_HOME=${HOME_ysl}/.cargo
