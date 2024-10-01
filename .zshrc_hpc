@@ -1,0 +1,68 @@
+#############    oh-my-zsh    #############
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+fpath+=~/.zfunc
+
+plugins=(
+    git
+    extract
+    z
+    colored-man-pages
+    # fzf-tab
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    zsh-completions
+    you-should-use
+    fast-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+
+#############    alias    #############
+
+alias mv="mv -v"
+alias cp="cp -v"
+alias ln="ln -v"
+
+alias LS="ls"
+# alias ls="lsd"
+# alias ll="ls -lh -g --header"
+# alias la="ls -lAh -g --header"
+
+alias ..="cd ..; ls"
+alias ...="cd ../..; ls"
+
+alias cdsc="cd ${HOME_ysl}/scripts; ls"
+alias cdsr="cd ${HOME_ysl}/src; ls"
+alias obsd="cd ${HOME_ysl}/scripts/obsidian-md; ls"
+
+alias codei="code-insiders"
+
+alias atb="conda activate base"
+alias dea="conda deactivate"
+
+alias glb="glola"
+alias gld="glols"
+
+alias clo="rm -rf *.out *.err"
+
+alias setlocalproxy='
+    export https_proxy=http://127.0.0.1:17890 http_proxy=http://127.0.0.1:17890 all_proxy=socks5://127.0.0.1:17890
+'
+
+# alias vi="nvim"
+
+# alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
+
+
+#############    PATH    #############
+export HOME_ysl=$HOME/yangsl
+
+export PATH=$HOME_ysl/bin:$PATH
+export PATH=$HOME_ysl/local/bin:$PATH
+
+export RUSTUP_HOME=$HOME_ysl/.rustup
+export CARGO_HOME=$HOME_ysl/.cargo

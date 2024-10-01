@@ -7,9 +7,9 @@ plugins=(
     git
     extract
     z
-    colored-man-page
+    colored-man-pages
     # fzf-tab
-    forgit
+    # forgit
     zsh-syntax-highlighting
     zsh-autosuggestions
     zsh-completions
@@ -30,43 +30,39 @@ alias cp="cp -v"
 alias ln="ln -v"
 
 alias LS="ls"
+# alias ls="lsd"
+# alias ll="ls -lh -g --header"
+# alias la="ls -lAh -g --header"
 
 alias ..="cd ..; ls"
 alias ...="cd ../..; ls"
 
+alias codei="code-insiders"
 
-##########   可选   ##########
-# alias ls="lsd"
-# alias ll="ls -lh -g --header"
-# alias la="ls -lAh -g --header"
+alias cdsc="cd ${HOME}/scripts; ls"
+alias cdsr="cd ${HOME}/src; ls"
+alias obsd="cd ${HOME}/scripts/obsidian-md; ls"
+
+alias atb="conda activate base"
+alias dea="conda deactivate"
+
+alias glb="glola"
+alias gld="glols"
+
 # alias vi="nvim"
-# alias codei="code-insiders"
+
 # alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
-
-# alias cdsc="cd $HOME/scripts; ls"
-# alias cdsr="cd $HOME/src; ls"
-# alias obsd="cd $HOME/scripts/obsidian-md; ls"
-
-# alias atb="conda activate base"
-# alias dea="conda deactivate"
-
-# alias glb="glola"
-# alias gld="glols"
-
-# alias clo="rm -rf *.out *.err"
 
 
 #############    PATH    #############
 
 export PATH=$HOME/bin:$PATH
 
-########## 可选 ##########
 # Homebrew 设置
 export PATH=/opt/homebrew/bin:$PATH
-# 交大镜像
-export HOMEBREW_BREW_GIT_REMOTE=https://mirrors.sjtug.sjtu.edu.cn/git/brew.g
-export HOMEBREW_CORE_GIT_REMOTE=https://mirrors.sjtug.sjtu.edu.cn/git/homebr
-export HOMEBREW_BOTTLE_DOMAIN=https://mirror.sjtu.edu.cn/homebrew-bottles/bo
+export HOMEBREW_BREW_GIT_REMOTE=https://mirrors.sjtug.sjtu.edu.cn/git/brew.git
+export HOMEBREW_CORE_GIT_REMOTE=https://mirrors.sjtug.sjtu.edu.cn/git/homebrew-core.git
+export HOMEBREW_BOTTLE_DOMAIN=https://mirror.sjtu.edu.cn/homebrew-bottles/bottles
 
 # go 设置
 export GOPROXY=https://goproxy.cn,direct
