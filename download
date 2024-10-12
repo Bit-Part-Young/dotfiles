@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+script_name=$(basename "$0")
+
+help() {
+  echo "Download files from remote server using rsync."
+  echo -e "\nUsage:"
+  echo "   ${script_name} [SERVER_ALIAS] [REMOTE_PATH] [LOCAL_PATH]"
+  exit 1
+}
+
+if [ "$#" -lt 2 ]; then
+  help
+fi
+
+SERVER_ALIAS=$1
+REMOTE_PATH=$2
+LOCAL_PATH=$3
+
+
+rsync -avuP --human-readable "$SERVER_ALIAS:${REMOTE_PATH}" "${LOCAL_PATH}"
+
+echo -e "\nDownload completed."
