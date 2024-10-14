@@ -11,6 +11,8 @@ Linux Configuration Files (Personal Use).
 .ssh/config          # GitHub、Gitee 和 GitLab 的 SSH config 文件
 .condarc             # Conda 配置文件，清华镜像源
 vscode/              # VSCode 配置文件；含 通用设置、Vim、LateX Workshop、PicGo 插件设置
+upload               # 通过 rsync 上传本地文件到服务器；建议配置好 SSH 免密登录 + 服务器别名
+download             # 通过 rsync 下载服务器文件到本地
 source.list          # Ubuntu 源文件；更换国内源
 mirrorlist           # Arch Linux 源文件；更换国内源
 proxywsl             # 登录 WSL 2 时自动更新代理 IP
@@ -51,6 +53,11 @@ cp .condarc ~
 
 # vscode/*settings.json 使用
 # 将 *settings.json 文件内容根据需求拷贝到 VSCode 的 settings.json 中
+
+# upload / download 使用
+upload                          # 查看帮助
+upload Master file              # upload 示例；上传本地文件到 Master 服务器
+download Master "~/sync/XXX" .  # download 示例；下载 Master 服务器上的文件到本地
 
 # source.list 使用
 # 备份
