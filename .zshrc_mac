@@ -1,4 +1,5 @@
-#############    oh-my-zsh    #############
+#---------------------    oh-my-zsh    ----------------------------
+
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -23,7 +24,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 
-#############    alias    #############
+#---------------------    alias    ----------------------------
 
 alias mv="mv -v"
 alias cp="cp -v"
@@ -39,11 +40,11 @@ alias ...="cd ../..; ls"
 
 alias codei="code-insiders"
 
-alias cdsc="cd ${HOME}/scripts; ls"
-alias cdsr="cd ${HOME}/src; ls"
-alias obsd="cd ${HOME}/scripts/obsidian-md; ls"
+alias cdsc="cd ~/scripts; ls"
+alias cdsr="cd ~/src; ls"
+alias obsd="cd ~/scripts/obsidian-md; ls"
 
-alias atb="conda activate base"
+alias atb="conda activate base_ysl"
 alias dea="conda deactivate"
 
 alias glb="glola"
@@ -54,7 +55,7 @@ alias gld="glols"
 # alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
 
 
-#############    PATH    #############
+#---------------------    PATH    ----------------------------
 
 export PATH=$HOME/bin:$PATH
 
@@ -69,9 +70,9 @@ export GOPROXY=https://goproxy.cn,direct
 export PATH=$(go env GOPATH)/bin:$PATH
 
 
+#---------------------    其他    ----------------------------
 
-#############    ELSE    #############
-########## 可选 ##########
+#--------- 可选 ----------
 # fzf-tab 设置
 ## # disable sort when completing `git checkout`
 ## zstyle ':completion:*:git-checkout:*' sort false
