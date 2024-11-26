@@ -44,6 +44,7 @@ alias cdyw="cd ~/yangsl/work; ls"
 alias codei="code-insiders"
 
 alias atb="conda activate base_ysl"
+alias ate="conda activate atomate_env"
 alias dea="conda deactivate"
 
 alias glb="glola"
