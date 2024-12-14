@@ -3,6 +3,7 @@
 alias mv="mv -v"
 alias cp="cp -v"
 alias ln="ln -v"
+alias rm="rm -v"
 
 alias LS="ls"
 # alias ls="lsd"
