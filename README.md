@@ -17,6 +17,11 @@ source.list          # Ubuntu 源文件；更换国内源
 mirrorlist           # Arch Linux 源文件；更换国内源
 proxywsl             # 登录 WSL 2 时自动更新代理 IP
 clash.service        # Clash 的 systemd 服务文件
+
+# .config/ 目录内容
+alacritty/           # alacritty 终端模拟器配置文件
+kitty/               # kitty 终端模拟器配置文件
+yazi/                # yazi 终端文件管理器配置文件
 ```
 
 ---
