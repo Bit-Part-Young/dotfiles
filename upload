@@ -11,14 +11,14 @@ help() {
   exit 1
 }
 
-if [ "$#" -lt 2 ]; then
+if [[ "$#" -lt 2 ]]; then
   help
 fi
 
 SERVER_ALIAS=$1
 shift
 
-if [ "$SERVER_ALIAS" = "Master" ]; then
+if [[ "$SERVER_ALIAS" = "Master" || "$SERVER_ALIAS" = "Manager" ]]; then
   REMOTE_PATH="~/sync"
 else
   REMOTE_PATH="~/yangsl/sync"

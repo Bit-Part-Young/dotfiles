@@ -11,7 +11,7 @@ help() {
   exit 1
 }
 
-if [ "$#" -lt 2 ]; then
+if [[ "$#" -lt 2 ]]; then
   help
 fi
 
