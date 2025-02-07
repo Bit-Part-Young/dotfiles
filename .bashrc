@@ -7,8 +7,8 @@ alias rm="rm -v"
 
 alias LS="ls"
 # alias ls="lsd"
-# alias ll="ls -lh -g --header"
-# alias la="ls -lAh -g --header"
+# alias ll="ls -lhv -g --header"
+# alias la="ls -lAhv -g --header"
 
 alias ..="cd ..; ls"
 alias ...="cd ../..; ls"
@@ -34,7 +34,6 @@ alias setlocalproxy='
 # alias vi="nvim"
 
 # alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
-
 
 #---------------------    PATH    ----------------------------
 
