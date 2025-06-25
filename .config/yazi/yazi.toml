@@ -1,5 +1,9 @@
-[manager]
-ratio          = [ 1, 2, 5 ]
+[mgr]
+ratio           = [ 2, 2, 4 ]
 
 [preview]
-max_width       = 2000
+max_width       = 1000
+image_quality   = 90
+
+[tasks]
+image_bound     = [ 0, 0 ]
